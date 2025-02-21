@@ -39,7 +39,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys@1.0 \
     vendor.xiaomi.hardware.misys@2.0 \
     vendor.xiaomi.hardware.misys@3.0 \
-    MiuiCamera \
     MiuiExtraPhoto \
     vendor.xiaomi.hardware.misys@1.0.xml \
     vendor.xiaomi.hardware.misys@2.0.xml \

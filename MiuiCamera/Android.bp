@@ -1,0 +1,27 @@
+// Rule to merge MiuiCamera.apk parts into a single APK
+genrule {
+    name: "merge_miui_camera",
+    srcs: [
+        "*.part", // Matches all files ending with .part
+    ],
+    out: ["MiuiCamera.apk"],
+    cmd: "cat $(in) > $(out)",
+}
+
+// Import MiuiCamera
+android_app_import {
+    name: "MiuiCamera",
+    apk: ":merge_miui_camera", // Reference the output of the genrule
+    certificate: "platform",
+    overrides: [
+        "Snap",
+        "Camera2",
+        "Aperture",
+        "GCamGOPrebuilt-V3",
+    ],
+    owner: "xiaomi",
+    privileged: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}

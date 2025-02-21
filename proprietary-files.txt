@@ -32,7 +32,6 @@ vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
 # MiuiCamera
 system/lib64/libcamera_algoup_jni.xiaomi.so;SYMLINK=system/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so
 system/lib64/libcamera_mianode_jni.xiaomi.so;SYMLINK=system/priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so
-system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Camera2,GoogleCamera,GoogleCameraGo
 
 # MiuiExtraPhoto
 system/lib64/libdoc_photo.so;SYMLINK=system/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo.so
